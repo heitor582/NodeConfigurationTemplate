@@ -7,7 +7,7 @@
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:staged": "jest",
     "lint:staged": "eslint src/ $(git diff --name-only HEAD | grep -E '.(js|jsx|ts|tsx)$' | xargs) --fix",
-    "lint": "eslint src/**"
+    "lint": "eslint \"**/*.{ts,tsx}\" --no-error-on-unmatched-pattern"
   },
   "repository": {
     "type": "git",
