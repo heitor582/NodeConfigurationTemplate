@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:staged": "jest",
-    "lint": "eslint src/** $(git diff --name-only HEAD | grep -E '.(js|jsx|ts|tsx)$' | xargs) --fix"
+    "lint:staged": "eslint src/ $(git diff --name-only HEAD | grep -E '.(js|jsx|ts|tsx)$' | xargs) --fix",
+    "lint": "eslint src/**"
   },
   "repository": {
     "type": "git",
